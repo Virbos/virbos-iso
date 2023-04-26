@@ -1,0 +1,7 @@
+NAME="Virbos"
+PRETTY_NAME="Virbos"
+ID=virbos
+BUILD_ID=rolling
+ANSI_COLOR="32"
+HOME_URL="https://github.com/virbos"
+LOGO=virbos-logo

@@ -124,3 +124,7 @@ zsh
 
 # virbos
 maxfetch
+# bspwm
+bspwm
+sxhkd
+xorg-xinit

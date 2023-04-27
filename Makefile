@@ -8,6 +8,6 @@ virbos-*.*.*-x86_64.iso:
 	rm -rf out
 
 clean:
-	rm -rf iso out
+	rm -rf iso out virbos-*.*.*-x86_64.iso
 
 .PHONY: clean

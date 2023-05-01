@@ -12,8 +12,5 @@ builds ISOs:
  - `packages.x86_64` is a newline-separated list of packages that will be installed to the live ISO
  - `airootfs` is the initial root filesystem. Put config files here and whatever else you want.
 
-To build this ISO, just run make as root:
-
-```
-# make
-```
+After you've built it, you can test it in QEMU by running
+`run_archiso -i virbos-*.iso`.

@@ -4,6 +4,4 @@ if grep -Fqa 'accessibility=' /proc/cmdline &> /dev/null; then
 fi
 
 ~/.automated_script.sh
-
-pulseaudio --daemonize=yes
-aplay /etc/Startup.wav & sway
+sway

@@ -127,6 +127,7 @@ zsh
 # bspwm
 sway
 dmenu
+alacritty
 firefox
 xorg-xwayland
 xorg-xinit

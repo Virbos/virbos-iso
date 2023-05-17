@@ -125,6 +125,6 @@ zsh
 # virbos
 #maxfetch
 # bspwm
-bspwm
-sxhkd
+i3
+i3status
 xorg-xinit

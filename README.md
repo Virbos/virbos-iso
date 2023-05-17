@@ -1,4 +1,5 @@
 This repository contains source files for the Virbos live ISO.
+**IMPORTANT** The GUI In the ISO (Wayland with sway) Is unable to start in a VM. If you know a workaround or fix, Feel free to fork the ISO and add it
 
 It is built using archiso, install it using `pacman -S archiso`.
 

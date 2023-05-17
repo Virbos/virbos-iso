@@ -128,5 +128,5 @@ zsh
 sway
 dmenu
 firefox
-Xwayland
+xorg-xwayland
 xorg-xinit

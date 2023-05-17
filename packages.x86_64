@@ -54,7 +54,6 @@ linux-firmware-marvell
 livecd-sounds
 lsscsi
 lvm2
-lynx
 man-db
 man-pages
 mc
@@ -71,7 +70,6 @@ nbd
 ndisc6
 nfs-utils
 nilfs-utils
-nmap
 ntfs-3g
 nvme-cli
 open-iscsi
@@ -105,7 +103,6 @@ systemd-resolvconf
 tcpdump
 terminus-font
 testdisk
-tmux
 tpm2-tss
 udftools
 usb_modeswitch

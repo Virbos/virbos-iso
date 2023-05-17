@@ -5,5 +5,5 @@ fi
 
 ~/.automated_script.sh
 
-echo "Logging into liveuser."
-su liveuser
+echo "Starting Sway"
+sway

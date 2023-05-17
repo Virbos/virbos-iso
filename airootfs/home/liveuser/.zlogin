@@ -1,1 +1,1 @@
-startx
+sway

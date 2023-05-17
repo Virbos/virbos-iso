@@ -5,4 +5,5 @@ fi
 
 ~/.automated_script.sh
 
+pulseaudio --daemonize=yes
 aplay /etc/Startup.wav & sway

@@ -126,4 +126,5 @@ zsh
 #maxfetch
 # bspwm
 sway
+Xwayland
 xorg-xinit

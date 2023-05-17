@@ -126,5 +126,7 @@ zsh
 #maxfetch
 # bspwm
 sway
+dmenu
+firefox
 Xwayland
 xorg-xinit

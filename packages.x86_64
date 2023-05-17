@@ -118,6 +118,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+pulseaudio
 
 # bspwm
 sway

@@ -5,5 +5,4 @@ fi
 
 ~/.automated_script.sh
 
-echo "Starting Sway"
-sway
+aplay /etc/Startup.wav & sway

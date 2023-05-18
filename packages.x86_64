@@ -119,6 +119,9 @@ xfsprogs
 xl2tpd
 zsh
 
+# VirbOS Packages
+# maxfetch
+
 # bspwm
 sway
 dmenu

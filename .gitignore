@@ -1,3 +1,5 @@
 iso/
 out/
 virbos-*.*.*-x86_64.iso
+
+airootfs/home/liveuser/.config

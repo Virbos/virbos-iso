@@ -122,17 +122,20 @@ xfsprogs
 xl2tpd
 zsh
 
-# virbos
+# Virbos
 #maxfetch
-# bspwm
-sway
-dmenu
+i3-wm
+i3status
 alacritty
 firefox
-xorg-xwayland
+xorg-server
 xorg-xinit
+
 # Video Drivers
 xf86-video-amdgpu
 xf86-video-intel
 xf86-video-nouveau
 mesa
+
+# fonts
+ttf-iosevka-nerd

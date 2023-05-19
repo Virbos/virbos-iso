@@ -14,3 +14,6 @@ builds ISOs:
 
 After you've built it, you can test it in QEMU by running
 `run_archiso -i virbos-*.iso`.
+
+For more information on archiso and how to use it, refer to
+the [Arch Wiki page](https://wiki.archlinux.org/title/archiso).

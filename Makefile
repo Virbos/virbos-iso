@@ -13,7 +13,8 @@ virbos-*.*.*-x86_64.iso:
 	mkdir -p tmp
 	mkdir -p ${CONFDIR}
 	git clone -q ${CONFREPO} tmp/configs
-	cp -R tmp/configs/{${CONFIGS}} ${CONFDIR}
+	cp -Rf tmp/configs/{${CONFIGS}} ${CONFDIR}
+	cp -f pacman.conf airootfs/etc/pacman.conf
 	@# Build ISO
 	${MKARCHISO} ${MKARCHISOFLAGS}
 	mv out/virbos-*.*.*-x86_64.iso .

@@ -3,7 +3,7 @@
 
 iso_name="virbos"
 iso_label="VIRBOS_ISO"
-iso_publisher="Virbos <https://github.com/Virbos>"
+iso_publisher="Virbos <https://virbos.xyz>"
 iso_application="Virbos live installation ISO"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"

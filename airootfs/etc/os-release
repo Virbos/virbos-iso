@@ -3,5 +3,5 @@ PRETTY_NAME="Virbos"
 ID=virbos
 BUILD_ID=rolling
 ANSI_COLOR="32"
-HOME_URL="https://github.com/virbos"
+HOME_URL="https://virbos.xyz"
 LOGO=virbos-logo

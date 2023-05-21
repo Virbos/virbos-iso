@@ -123,7 +123,7 @@ xl2tpd
 zsh
 
 # Virbos
-#maxfetch
+maxfetch
 i3-wm
 i3status
 alacritty

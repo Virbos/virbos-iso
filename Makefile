@@ -20,6 +20,6 @@ virbos-*.*.*-x86_64.iso:
 	mv out/virbos-*.*.*-x86_64.iso .
 
 clean:
-	rm -rf iso out tmp virbos-*.*.*-x86_64.iso airootfs/home/liveuser/.config
+	rm -rf iso out tmp virbos-*.*.*-x86_64.iso airootfs/{home/liveuser/.config,etc/pacman.conf}
 
 .PHONY: all clean

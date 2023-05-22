@@ -123,6 +123,8 @@ xl2tpd
 zsh
 
 # Virbos
+virbos-livescripts
+virbos-logos
 maxfetch
 i3-wm
 i3status

@@ -130,6 +130,8 @@ alacritty
 librewolf
 xorg-server
 xorg-xinit
+scrot
+
 
 # Video Drivers
 xf86-video-amdgpu

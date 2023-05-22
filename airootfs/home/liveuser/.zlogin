@@ -1,1 +1,2 @@
+touch ~/.Xauthority
 startx

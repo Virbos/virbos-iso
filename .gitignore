@@ -1,6 +1,8 @@
 iso/
 out/
-virbos-*.*.*-x86_64.iso
+tmp/
+*.iso
+*.iso.sha256
 
 airootfs/home/liveuser/.config
 airootfs/etc/pacman.conf

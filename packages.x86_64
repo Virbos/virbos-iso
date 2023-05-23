@@ -122,22 +122,24 @@ xfsprogs
 xl2tpd
 zsh
 
-# Virbos
+# virbos repo
 virbos-livescripts
 virbos-logos
 maxfetch
+alacritty-sixel
+
+# X
 i3-wm
 i3status
-alacritty
 firefox
 xorg-server
 xorg-xinit
-
-# Video Drivers
 xf86-video-amdgpu
 xf86-video-intel
 xf86-video-nouveau
 mesa
-
-# fonts
 ttf-iosevka-nerd
+
+# etc.
+micro
+neovim

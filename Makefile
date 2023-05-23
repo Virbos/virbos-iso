@@ -1,13 +1,16 @@
 MKARCHISO      = mkarchiso
-MKARCHISOFLAGS = -Avirbos -Cpacman.conf -Lvirbosiso -v -wiso .
+MKARCHISOFLAGS = -Avirbos -Cpacman.conf -LVIRBOS_ISO -wiso .
 
 CONFREPO = https://github.com/Virbos/virbos-configs
 CONFIGS  = alacritty,bspwm,i3,i3status
 CONFDIR  = airootfs/home/liveuser/.config
 
-all: virbos-*.*.*-x86_64.iso
+ISO   = virbos-$(shell date '+%Y.%m.%d')-x86_64.iso
+CKSUM = ${ISO}.sha256
 
-virbos-*.*.*-x86_64.iso:
+all: ${ISO} ${CKSUM}
+
+${ISO}:
 	@# Download configs
 	rm -rf airootfs/home/liveuser/.config
 	mkdir -p tmp
@@ -19,7 +22,12 @@ virbos-*.*.*-x86_64.iso:
 	${MKARCHISO} ${MKARCHISOFLAGS}
 	mv out/virbos-*.*.*-x86_64.iso .
 
-clean:
-	rm -rf iso out tmp virbos-*.*.*-x86_64.iso airootfs/{home/liveuser/.config,etc/pacman.conf}
+checksum: ${CKSUM}
+${CKSUM}: ${ISO}
+	@# Generate checksum
+	cksum -a sha256 ${ISO} >${CKSUM}
 
-.PHONY: all clean
+clean:
+	rm -rf ${ISO} ${CKSUM} iso out tmp airootfs/{home/liveuser/.config,etc/pacman.conf}
+
+.PHONY: all checksum clean

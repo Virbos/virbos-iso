@@ -6,7 +6,7 @@ After that, just run `make` as root in the project's directory.
 
 If you'd like to rebuild the ISO, just run `make clean`.
 This will remove all temporary ISO build files, configs,
-and of course, the ISO.
+and the ISO.
 
 In case you didn't know, here's a quick list of information
 you might need to know about archiso and how to modify how it

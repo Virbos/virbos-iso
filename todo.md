@@ -1,6 +1,6 @@
 # To-do list
 
-- [ ] Get the package repository up and running
+- [x] Get the package repository up and running
 - [ ] Finish the installer
 - [ ] Make some Virbos-specific utilities:
   - [ ] virbos-release: print Virbos release information
@@ -9,6 +9,6 @@
 - [ ] Make some configs:
   - [x] i3
   - [x] Alacritty
-  - [ ] Polybar
+  - [x] Polybar
   - [ ] Rofi
   - [ ] zsh

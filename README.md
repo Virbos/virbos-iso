@@ -17,7 +17,7 @@ builds ISOs:
  - `airootfs` is the initial root filesystem. Put config files here and whatever else you want.
 
 After you've built it, you can test it in QEMU by running
-`run_archiso -i virbos-*.iso`.
+`make test`.
 
 The default password for liveuser is `virbos`.
 Access the root account by using sudo.

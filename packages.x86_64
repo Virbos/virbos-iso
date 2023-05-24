@@ -131,6 +131,7 @@ alacritty-sixel
 # X
 i3-wm
 polybar
+conky
 firefox
 xorg-server
 xorg-xinit

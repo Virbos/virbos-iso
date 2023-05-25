@@ -20,6 +20,7 @@ ${ISO}:
 	mkdir -p ${CONFDIR}
 	git clone -q ${CONFREPO} tmp/configs
 	${MAKE} -Ctmp/configs CONFDIR="${CONFDIR}" install
+	cp airrootfs/home/liveuser/.config/conky/.conkyrc ../../.conkyrc
 	cp -f pacman.conf airootfs/etc/pacman.conf
 	@# Build ISO
 	${MKARCHISO} ${MKARCHISOFLAGS}

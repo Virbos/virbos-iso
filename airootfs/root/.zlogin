@@ -5,5 +5,3 @@ fi
 
 ~/.automated_script.sh
 
-echo "Starting Sway"
-sway

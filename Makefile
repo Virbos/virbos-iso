@@ -2,7 +2,8 @@ MKARCHISO      = mkarchiso
 MKARCHISOFLAGS = -Avirbos -Cpacman.conf -LVIRBOS_ISO -wiso .
 
 CONFREPO = https://github.com/Virbos/virbos-configs
-CONFDIR  = airootfs/home/liveuser
+CONFDIR  = airootfs/home/liveuser/.config
+CONFIGS  = alacritty,bspwm,conky,i3,kitty,polybar,sxhkd
 
 ISO   = virbos-$(shell date '+%Y.%m.%d')-x86_64.iso
 CKSUM = ${ISO}.sha256
@@ -16,10 +17,9 @@ all: ${ISO} ${CKSUM}
 ${ISO}:
 	@# Download configs
 	rm -rf airootfs/home/liveuser/.config
-	mkdir -p tmp
-	mkdir -p ${CONFDIR}
+	mkdir -p tmp ${CONFDIR}
 	git clone -q ${CONFREPO} tmp/configs
-	${MAKE} -Ctmp/configs CONFDIR="${CONFDIR}" install
+	cp -Rf tmp/configs/{${CONFIGS}} airootfs/home/liveuser/.config
 	cp -f pacman.conf airootfs/etc/pacman.conf
 	@# Build ISO
 	${MKARCHISO} ${MKARCHISOFLAGS}

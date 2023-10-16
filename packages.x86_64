@@ -126,12 +126,12 @@ zsh
 virbos-livescripts
 virbos-logos
 maxfetch
-alacritty-sixel
 
 # X
 i3-wm
 polybar
 conky
+wezterm
 firefox
 xorg-server
 xorg-xinit

@@ -3,7 +3,7 @@ MKARCHISOFLAGS = -Avirbos -Cpacman.conf -LVIRBOS_ISO -wiso -v .
 
 CONFREPO = https://github.com/Virbos/virbos-configs
 CONFDIR  = airootfs/home/liveuser/.config
-CONFIGS  = alacritty,bspwm,conky,i3,kitty,polybar,sxhkd
+CONFIGS  = bspwm,conky,i3,kitty,polybar,sxhkd,wezterm
 
 ISO   = virbos-$(shell date '+%Y.%m.%d')-x86_64.iso
 CKSUM = ${ISO}.sha256

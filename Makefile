@@ -1,5 +1,5 @@
 MKARCHISO      = mkarchiso
-MKARCHISOFLAGS = -Avirbos -Cpacman.conf -LVIRBOS_ISO -wiso .
+MKARCHISOFLAGS = -Avirbos -Cpacman.conf -LVIRBOS_ISO -wiso -v .
 
 CONFREPO = https://github.com/Virbos/virbos-configs
 CONFDIR  = airootfs/home/liveuser/.config
@@ -14,16 +14,20 @@ endif
 
 all: ${ISO} ${CKSUM}
 
-${ISO}:
-	@# Download configs
-	rm -rf airootfs/home/liveuser/.config
-	mkdir -p tmp ${CONFDIR}
-	git clone -q ${CONFREPO} tmp/configs
-	cp -Rf tmp/configs/{${CONFIGS}} airootfs/home/liveuser/.config
-	cp -f pacman.conf airootfs/etc/pacman.conf
-	@# Build ISO
-	${MKARCHISO} ${MKARCHISOFLAGS}
-	mv out/${ISO} .
+configs:
+	@printf '==> Installing configurations\n'
+	@rm -rf airootfs/home/liveuser/.config tmp
+	@mkdir -p ${CONFDIR}
+	@git clone -q ${CONFREPO} tmp
+	@cp -Rf tmp/{${CONFIGS}} airootfs/home/liveuser/.config
+	@cp -f pacman.conf airootfs/etc/pacman.conf
+
+iso: ${ISO}
+${ISO}: configs
+	@printf '==> Building ISO image\n'
+	@printf '%s %s\n' "${MKARCHISO}" "${MKARCHISOFLAGS}"
+	@sudo ${MKARCHISO} ${MKARCHISOFLAGS}
+	@sudo mv out/${ISO} .
 
 checksum: ${CKSUM}
 ${CKSUM}: ${ISO}
@@ -36,4 +40,4 @@ test:
 clean:
 	rm -rf virbos-*.*.*-x86_64.iso* iso out tmp airootfs/{home/liveuser/.config,etc/pacman.conf}
 
-.PHONY: all checksum clean test
+.PHONY: all checksum clean configs iso test

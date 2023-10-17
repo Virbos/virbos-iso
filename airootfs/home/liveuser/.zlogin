@@ -1,2 +1,2 @@
 touch ~/.Xauthority
-startx
+[ "$TTY" = tty1 ] && startx || true

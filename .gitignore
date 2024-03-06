@@ -1,8 +1,8 @@
 iso/
 out/
-tmp/
-*.iso
-*.iso.sha256
+configs/
+result/
+*.iso*
 
 airootfs/home/liveuser/.config
 airootfs/etc/pacman.conf
